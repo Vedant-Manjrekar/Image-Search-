@@ -1,0 +1,62 @@
+body {
+  background-color: white;
+}
+
+#root {
+  height: -webkit-fill-available;
+}
+
+.app {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/image_app_desktop.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  width: 100vw;
+  height: -webkit-fill-available;
+}
+
+.navbar {
+  position: fixed;
+  color: black;
+  z-index: 1;
+  background-color: white;
+  top: 0rem;
+  padding: 1rem 0;
+  width: -webkit-fill-available;
+}
+
+.back {
+  left: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+#searchbar {
+  filter: brightness(100%);
+  width: 60vw;
+  height: 8vh;
+  border-radius: 12px;
+  border: none;
+  text-indent: 1rem;
+  font-size: 1rem;
+  background-color: #fffcfc82 !important;
+  color: black;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 20px #000;
+}
+
+.homepage-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,44 @@
+.links {
+  z-index: 2;
+  background-color: white;
+  color: black;
+  width: 50vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  position: fixed;
+}
+
+.link_name > a {
+  color: black;
+  text-transform: capitalize;
+}
+
+.link_name > a:hover {
+  color: blueviolet;
+}
+
+.link_name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link_header {
+  font-weight: bold;
+}
+
+.cross {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .links {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,55 @@
+.image {
+  width: 95%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.image:hover {
+  cursor: pointer;
+  filter: brightness(30%);
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.image:hover .author {
+  z-index: 1;
+}
+
+.imageComp {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.img_comp1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.img_comp2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.author {
+  position: absolute;
+  text-align: center;
+  width: -webkit-fill-available;
+  z-index: -1;
+  margin: auto;
+  color: black;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .img_comp1 {
+    justify-content: center;
+  }
+  .img_comp2 {
+    justify-content: center;
+  }
+}

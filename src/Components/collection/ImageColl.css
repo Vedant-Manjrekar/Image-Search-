@@ -1,0 +1,58 @@
+.image_coll {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  top: 5vh;
+  position: absolute;
+  gap: 1rem;
+  width: -webkit-fill-available;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  background-color: white;
+}
+
+.image_coll_1 {
+  display: grid;
+  height: max-content;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.image_coll_2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  gap: 1rem;
+  height: max-content;
+}
+
+.results {
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  color: black;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.display_image {
+  color: black;
+  position: fixed;
+  top: 45vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display_image > h1 {
+  display: inline;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .image_coll {
+    grid-template-columns: 1fr;
+  }
+}
