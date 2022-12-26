@@ -97,6 +97,7 @@ function HomePage() {
           </div>
           {/* Text */}
           <p className="title">Download HD images for free.</p>
+          {/* <p className="title1">Download HD images for free.</p> */}
           {buffer ? <p>Loading..</p> : ""}
         </div>
       ) : (

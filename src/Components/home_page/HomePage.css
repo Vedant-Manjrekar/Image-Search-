@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("https://source.unsplash.com/featured?wallpaper/1920x1200/");
+  filter: drop-shadow(1);
   background-size: cover;
   background-position: center;
   background-color: black;
@@ -54,7 +55,7 @@ body {
 .searchIcon {
   position: relative;
   right: max-content;
-  left: 95%;
+  left: 78vw;
   z-index: 1;
 }
 
@@ -63,7 +64,23 @@ body {
   font-weight: bold;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px 20px #000;
+  background-color: rgba(0, 0, 0, 0.326);
+  padding: 1rem;
+  /* width: max-content; */
+  /* color: white;
+  filter: blur(24px); */
+}
+
+.title1 {
+  position: absolute;
+  top: 52vh;
+  margin: auto;
+  color: transparent;
+  background-color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: auto;
 }
 
 .homepage-main {
@@ -72,7 +89,7 @@ body {
   align-items: center;
 }
 
-@media (min-width: 0px) and (max-width: 361px) {
+@media (min-width: 0px) and (max-width: 400px) {
   .title {
     margin: 2rem 3rem;
   }
