@@ -1,0 +1,25 @@
+.back {
+  z-index: 1;
+}
+
+.navbar {
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  display: grid;
+  color: black;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.results {
+  display: inline;
+  text-align: center;
+}
+
+.loading {
+  color: black;
+  position: absolute;
+  left: 47%;
+  top: 44%;
+}

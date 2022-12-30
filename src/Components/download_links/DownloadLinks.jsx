@@ -4,18 +4,19 @@ import { ImCross } from "react-icons/im";
 import FileSaver from "file-saver";
 
 function DownloadLinks({ links, removeLinkPage }) {
+  // initializing empty array.
   let linksArray = [];
 
+  // iterating object of links and storing them in an array in key value pairs.
   Object.keys(links).forEach((link) => {
-    console.log(link);
     linksArray.push({ link: links[link], name: link });
   });
 
+  // function to download the selected image.
   function download(url) {
     FileSaver.saveAs(url, "image.jpg");
   }
 
-  console.log(linksArray);
   return (
     <>
       <div className="links">

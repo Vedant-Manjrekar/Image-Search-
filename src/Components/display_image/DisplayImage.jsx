@@ -8,15 +8,19 @@ import { ImCross } from "react-icons/im";
 import DownloadLinks from "../download_links/DownloadLinks";
 
 function DisplayImage({ url, username }) {
-  const [links, setLinks] = useState([]);
+  const [links, setLinks] = useState(null);
   const [showLinks, setShowLinks] = useState(false);
+
+  // using context through custom hook.
   const updateImageVisibility = updateImage();
 
+  // function to remove the selected image as well as the links dialogue.
   function remove() {
     updateImageVisibility();
     setShowLinks(false);
   }
 
+  // redirect user to image authors instagram page.
   function redirect() {
     if (username != "undefined" || null) {
       window.open(`https://www.instagram.com/${username}/`, "_blank");
@@ -25,7 +29,8 @@ function DisplayImage({ url, username }) {
     }
   }
 
-  function download() {
+  // function to fetch all download links.
+  function getDownloadLinks() {
     setShowLinks(true);
     const images = JSON.parse(localStorage.getItem("all_urls"));
     setLinks(images);
@@ -40,7 +45,7 @@ function DisplayImage({ url, username }) {
         <div onClick={redirect} className="download">
           <BsInstagram size={"32px"} />
         </div>
-        <div onClick={download} className="download">
+        <div onClick={getDownloadLinks} className="download">
           <BsDownload size={"32px"} />
         </div>
       </div>
