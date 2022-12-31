@@ -11,7 +11,7 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  background-image: url("https://source.unsplash.com/featured?photography/900x1900/");
+  background-image: url("https://source.unsplash.com/featured?wallpapers/900x1900/");
   filter: drop-shadow(1);
   background-size: cover;
   background-position: center;
